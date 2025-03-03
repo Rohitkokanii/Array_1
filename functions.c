@@ -113,3 +113,50 @@ void displayDoubleAlt(double arr[], int n) {
 		}
 	}
 }
+
+//Q3
+//integer
+
+void manipulateChar(char ch[]) {
+	int index;
+	char newValue;
+	printf("\nEnter idex = ");
+	scanf_s("%d", &index);
+	printf("\nEnter New Value = ");
+	scanf_s(" %c", &newValue,1);
+	ch[index] = newValue;
+}
+
+//character
+
+void manipulateInt(int arr[]) {
+	int index;
+	int newValue;
+	printf("\nEnter idex = ");
+	scanf_s("%d", &index);
+	printf("\nEnter New Value = ");
+	scanf_s("%d", &newValue);
+	arr[index] = newValue;
+}
+
+
+//Q4
+//char
+
+void swapChar(char ch[]) {
+	
+	int inx_1 = ch[3];
+	int inx_2 = ch[5];
+
+	int temp = inx_1;
+	inx_1 = inx_2;
+	inx_2 = temp;
+	ch[3] = inx_1;
+	ch[5] = inx_2;
+}
+
+//int
+
+void swapInt(int arr[]) {
+
+}

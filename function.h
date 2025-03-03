@@ -30,3 +30,14 @@ void displayCharAlt(char[], int);
 void displayFloatAlt(float[], int);
 
 void displayDoubleAlt(double[], int);
+
+//Question 3;
+
+void manipulateChar(char []);
+
+void manipulateInt(int[]);
+
+//Q4
+
+void swapInt(int []);
+void swapChar(char[]);

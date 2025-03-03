@@ -1,8 +1,8 @@
-//Q3
+//Q4
 
 #include<stdio.h>
 #include "function.h"
- 
+
 int main() {
 
 	char ch[8];
@@ -13,18 +13,20 @@ int main() {
 	scanf_s("%d", &choice);
 
 	switch (choice) {
-	case 1:printf("\n\nManipulate Int Value\n\n");
+	case 1:printf("\n\nSwap Int Value\n\n");
 		acceptInt(arr, 8);
 
-		manipulateInt(arr);
+		swapInt(arr);
+		printf("\n\nAfter Swap\n\n");
 
 		displayInt(arr, 8);
 		break;
 	case 2:
-		printf("\n\nManipulate Character Value\n\n");
+		printf("\n\nSwap Character Value\n\n");
 		acceptChar(ch, 8);
 
-		manipulateChar(ch);
+		swapChar(ch);
+		printf("\n\nAfter Swap\n\n");
 
 		displayChar(ch, 8);
 		break;
@@ -34,7 +36,7 @@ int main() {
 	default:
 		printf("\nInvalid input\n");
 	}
-	
-	
+
+
 	return 0;
 }
