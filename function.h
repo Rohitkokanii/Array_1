@@ -41,3 +41,24 @@ void manipulateInt(int[]);
 
 void swapInt(int []);
 void swapChar(char[]);
+
+//Q5
+
+void CopyInReverse(char [],int);
+
+//Q6
+
+void printEven(int [], int);
+
+void MultiplicationTableDivisibleBy7(int arr[], int n);
+
+void CheckPrime(int arr[], int n);
+
+void Checkpalindrom(int arr[], int n);
+
+void CheckArmstrong(int arr[], int n);
+
+//Q7
+
+void PrintUpperCaseChar(char ch[], int n);
+void PrintASCll(char ch[], int n);

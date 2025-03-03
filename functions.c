@@ -158,5 +158,150 @@ void swapChar(char ch[]) {
 //int
 
 void swapInt(int arr[]) {
+	int inx_1 = arr[3];
+	int inx_2 = arr[5];
 
+	int temp = inx_1;
+	inx_1 = inx_2;
+	inx_2 = temp;
+	arr[3] = inx_1;
+	arr[5] = inx_2;
+
+}
+
+//Q5
+ 
+void CopyInReverse(char ch[],int num) {
+
+	for (int i = num-1,j=0; i >= 0 || j<num; i--,j++) {
+		if (j >= i) {
+			break;
+		}
+		else {
+			int temp = ch[i];
+			ch[i] = ch[j];
+			ch[j] = temp;
+
+		}
+	}
+
+}
+
+//Q6
+//printEven
+void printEven(int arr[], int n) {
+	for (int i = 0; i < n; i++) {
+		if (arr[i] % 2 == 0) {
+			printf(" %d ", arr[i]);
+		}
+	}
+}
+
+//MultiplicationTableDivisibleBy7
+
+void MultiplicationTableDivisibleBy7(int arr[], int n) {
+	printf("\n");
+	for (int i = 0; i < n; i++) {
+		for (int j = 1; j <= 10; j++) {
+			if (arr[i] % 7 == 0) {
+				printf("%d\n", arr[i] * j);
+			}
+		}
+		printf("\n");
+	}
+}
+
+//CheckPrime(arr, 8);
+
+void CheckPrime(int arr[], int n) {
+
+	for (int i = 0; i < n; i++) {
+		int num = arr[i];
+		int isPrime = 1;
+		for (int j = 2; j < num; j++) {
+			if (num % j == 0) {
+				isPrime = 0;
+				break;
+			}
+
+
+			if (isPrime) {
+				printf("%d, ", arr[i]);
+				break;
+			}
+		}
+	}
+}
+
+//Checkpalindrom(arr, 8);
+
+void Checkpalindrom(int arr[], int n) {
+
+	printf("\nPalindrom No. = ");
+	for (int i = 0; i < n; i++) {
+		int num = arr[i];
+		int orgNum = num;
+		int lastDigit;
+		int rev=0;
+		while (num > 0) {
+			lastDigit = num % 10;
+			rev = rev * 10 + lastDigit;
+			num /= 10;
+		}
+		if (rev == orgNum) {
+			printf("%d, ", orgNum);
+		}
+	}
+}
+
+//CheckArmstrong(arr,8);
+
+void CheckArmstrong(int arr[], int n) {
+	printf("\nArmstrong No. = ");
+	for (int i = 0; i < n; i++) {
+		int num = arr[i];
+		int orgNum = num;
+		int temp = num;
+		int lastDigit;
+		int sum = 0;
+		int count = 0;
+		while (num > 0) {
+			count++;
+			
+			num /= 10;
+		}
+
+		for (int i = 1; i <= count; i++) {
+			lastDigit = temp % 10;
+			int mult = 1;
+			for (int j = 1; j <= count; j++) {
+				mult = mult * lastDigit;
+			}
+			sum = sum + mult;
+
+			temp /= 10;
+		}
+		if (sum == orgNum) {
+			printf("%d, ", orgNum);
+		}
+	}
+}
+
+//Q7]
+
+void PrintUpperCaseChar(char ch[], int n) {
+	printf("\nUpper Case : ");
+	for (int i = 0; i < n; i++) {
+		if (ch[i] >= 65 && ch[i] <= 90) {
+			printf("%c ", ch[i]);
+		}
+	}
+	printf("\n");
+}
+void PrintASCll(char ch[], int n) {
+	printf("\nASCII : ");
+	for (int i = 0; i < n; i++) {
+		printf("%d ", ch[i]);
+	}
+	printf("\n");
 }
