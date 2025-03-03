@@ -62,3 +62,7 @@ void CheckArmstrong(int arr[], int n);
 
 void PrintUpperCaseChar(char ch[], int n);
 void PrintASCll(char ch[], int n);
+
+//Q8
+
+void ConvertToUpperCase(char ch[], int n);

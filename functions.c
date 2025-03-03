@@ -305,3 +305,17 @@ void PrintASCll(char ch[], int n) {
 	}
 	printf("\n");
 }
+
+//Q8
+
+void ConvertToUpperCase(char ch[],int n) {
+	
+	
+	for (int i = 0; i < n; i++) {
+		if (ch[i] <= 97 && ch[i] >= 122) {
+			ch[i] = ch[i] - 32;
+		}
+		
+	}
+
+}
