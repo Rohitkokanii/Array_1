@@ -318,3 +318,62 @@ void ConvertToUpperCase(char ch[],int n) {
 	}
 
 }
+
+//Q9
+
+void leftRotate(char ch[], int n) {
+
+	char arr[8];
+	for (int i = 0; i < n; i++) {
+		int newIdx = (i + n-(n-1)) % n;
+		
+		arr[i] = ch[newIdx];
+	}
+	for (int i = 0; i < n; i++) {
+		ch[i] = arr[i];
+	}
+	
+	printf("\n\n\nNew Left Rotated Array : ");
+	
+}
+
+//Q10
+
+void RightRotate(int ch[],int n) {
+	char arr[8];
+	for (int i = 0; i < n; i++) {
+		int newIdx = (i + n - 1) % n;
+
+		arr[i] = ch[newIdx];
+	}
+	for (int i = 0; i < n; i++) {
+		ch[i] = arr[i];
+	}
+
+	printf("\n\n\nNew Right Rotated Array : ");
+
+}
+
+//Q11
+
+
+void MergelntoThird(char arr1[],char arr2[],int n1,int n2, char ch[], int n) {
+
+	for (int i = 0; i < n1; i++) {
+		ch[i] = arr1[i];
+	}
+
+	for (int i = 0; i < n2; i++) {
+		ch[i + n1] = arr2[i];
+	}
+
+	/*
+		if (i >= 0 && i <= 3) {
+			ch[i] = arr1[i];
+		}
+		else if (i >= 4 && i < n) {
+			int j = i - 4;
+			ch[i] = arr2[j];
+		}
+	*/
+}

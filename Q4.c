@@ -15,7 +15,6 @@ int main() {
 	switch (choice) {
 	case 1:printf("\n\nSwap Int Value\n\n");
 		acceptInt(arr, 8);
-
 		swapInt(arr);
 		printf("\n\nAfter Swap\n\n");
 
@@ -24,7 +23,6 @@ int main() {
 	case 2:
 		printf("\n\nSwap Character Value\n\n");
 		acceptChar(ch, 8);
-
 		swapChar(ch);
 		printf("\n\nAfter Swap\n\n");
 

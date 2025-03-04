@@ -66,3 +66,15 @@ void PrintASCll(char ch[], int n);
 //Q8
 
 void ConvertToUpperCase(char ch[], int n);
+
+//Q9
+
+void leftRotate(char ch[], int n);
+
+//Q10
+
+void RightRotate(int ch[], int n);
+
+//Q11
+
+void MergelntoThird(char[],char[],int,int, char[], int n);
