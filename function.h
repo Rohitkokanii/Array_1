@@ -71,10 +71,44 @@ void ConvertToUpperCase(char ch[], int n);
 
 void leftRotate(char ch[], int n);
 
-//Q10
+//Q10===================
 
 void RightRotate(int ch[], int n);
 
-//Q11
+//Q11===============
 
 void MergelntoThird(char[],char[],int,int, char[], int n);
+
+//Q12==============
+
+void CopylnAnotherReverse(char orgArr[], char revArr[], int n);
+
+//Q13==================
+
+void ReverseSameArray(char charArr[], int n);
+
+//Q14====================================
+
+//max
+int max(int intArr[], int n);
+
+//2nd_max
+int FindSecondLargest(int intArr[], int n);
+
+//min
+int FindSmallest(int intArr[], int n);
+
+//2nd_min
+int FindSecondSmallest(int intArr[], int n);
+
+
+//====================================================
+
+//Q15
+
+void FindArrayElement(char charArr[], int n);
+
+
+//Q16
+
+void CountDistinctArrayElement(char charArr[], int n);

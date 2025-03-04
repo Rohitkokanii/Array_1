@@ -366,14 +366,122 @@ void MergelntoThird(char arr1[],char arr2[],int n1,int n2, char ch[], int n) {
 	for (int i = 0; i < n2; i++) {
 		ch[i + n1] = arr2[i];
 	}
-
-	/*
-		if (i >= 0 && i <= 3) {
-			ch[i] = arr1[i];
-		}
-		else if (i >= 4 && i < n) {
-			int j = i - 4;
-			ch[i] = arr2[j];
-		}
-	*/
 }
+
+//Q12
+
+void CopylnAnotherReverse(char orgArr[], char revArr[], int n) {
+
+	for (int i = n - 1; i >= 0; i--) {
+		revArr[(n - 1)-i] = orgArr[i];
+	}
+
+}
+
+//Q13
+
+void ReverseSameArray(char charArr[], int n) {
+
+	for (int i = n - 1; i >= 0; i--) {
+		char temp = charArr[i];
+		charArr[i] = charArr[(n - 1) - i];
+		charArr[(n - 1) - i] = temp;
+		if (i == n/2) {
+			break;
+		}
+	}
+}
+
+//Q14
+//FindLarge()
+
+int max(int intArr[], int n) {
+	int max =-1;
+	for (int i = 0; i < n; i++) {
+			if (intArr[i] >= max) {
+				max = intArr[i];
+			}
+	}
+	return max;
+}
+
+//FindSmallest()
+#include "function.h"
+int FindSecondLargest(int intArr[], int n) {
+	int max_2 = -1;
+	int max_1 = max(intArr, n);
+	for (int i = 0; i < n; i++) {
+			if (intArr[i] >= max_2 && intArr[i]<max_1) {
+				
+				max_2 = intArr[i];
+			}
+	}
+	return max_2;
+}
+
+//FindSmallest(intArr,n)
+
+int FindSmallest(int intArr[], int n) {
+	int min = _CRT_INT_MAX;
+
+	for (int i = 0; i < n; i++) {
+		if(intArr[i]<min){
+			min = intArr[i];
+		}
+	}
+	return min;
+}
+
+
+//FindSecondSmallest(intArr,n)
+
+int FindSecondSmallest(int intArr[], int n) {
+	int min_2 = _CRT_INT_MAX;
+	int min_1 = FindSmallest(intArr, n);
+	for (int i = 0; i < n; i++) {
+		if (intArr[i] < min_2 && intArr[i]> min_1) {
+			min_2 = intArr[i];
+		}
+	}
+	return min_2;
+}
+
+//Q15
+
+void FindArrayElement(char charArr[], int n) {
+
+	char ch;
+
+	printf("\nEnter Char to find : ");
+	scanf_s(" %c", &ch, 1);
+
+	for (int i = 0; i < n; i++) {
+		if (ch == charArr[i]) {
+			printf("\nElement '%c' Find at index %d \n", charArr[i], i);
+			break;
+		}
+		else {
+			printf("\nInvalid Input\n");
+			break;
+		}
+	}
+	
+}
+
+//Q16
+
+void CountDistinctArrayElement(char charArr[], int n) {
+
+	for (int i = 0; i < n; i++) {
+		int count = 0;
+		for (int j = 0; j < n; j++) {
+			if (charArr[i] == charArr[j]) {
+				count++;
+			}
+		}
+		printf("%c : %d \n", charArr[i], count);
+	}
+}
+
+//Q17
+
