@@ -112,3 +112,9 @@ void FindArrayElement(char charArr[], int n);
 //Q16
 
 void CountDistinctArrayElement(char charArr[], int n);
+
+//Q17
+
+void acceptMarks(int [],int);
+
+void CalculatePercentage(int mark[], int n);

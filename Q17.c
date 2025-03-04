@@ -5,3 +5,16 @@ percentage and display.
 + display() function display an array elements
 + CalculatePercentage()
 */
+
+#include<stdio.h>
+#include "function.h"
+
+
+int main() {
+	int mark[7];
+	int n = 7;
+	acceptMarks(mark,n);
+	CalculatePercentage(mark,n);
+
+	return 0;
+}

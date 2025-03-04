@@ -483,5 +483,25 @@ void CountDistinctArrayElement(char charArr[], int n) {
 	}
 }
 
-//Q17
+//Q17 acceptMarks();
 
+void acceptMarks(int mark[],int n) {
+
+	for (int i = 0; i < n; i++) {
+		printf("\nEnter Marks of Sub - %d (Max - 80) = ",i+1);
+		scanf_s("%d", &mark[i]);
+	}
+}
+
+//CalculatePercentage(mark,n);
+
+void CalculatePercentage(int mark[], int n) {
+	int total = 0;
+	for (int i = 0; i < n; i++) {
+		total = total + mark[i];
+	}
+
+	float percent = (total /(float) 560) * 100;
+
+	printf("\nPercent : %.2f%%\n",percent);
+}
