@@ -1,10 +1,12 @@
 /*
+
 Q 16) Declare and initialise an array display how many times distinct array elements
 present in an array .
 Hint : In main () function Declare array
 Accept() function accepts all array elements from user
 display() function display an array elements
 CountDistinctArrayElement()
+
 */
 
 #include<stdio.h>
