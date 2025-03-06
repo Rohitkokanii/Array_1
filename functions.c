@@ -471,15 +471,26 @@ void FindArrayElement(char charArr[], int n) {
 //Q16
 
 void CountDistinctArrayElement(char charArr[], int n) {
-
+	
+	
+	char visited[] = { '-1' };
 	for (int i = 0; i < n; i++) {
 		int count = 0;
-		for (int j = 0; j < n; j++) {
-			if (charArr[i] == charArr[j]) {
-				count++;
-			}
+		int j;
+		
+		if (charArr[i] == visited[0]) {
+			continue;
 		}
-		printf("%c : %d \n", charArr[i], count);
+		
+		for (j = 0; j < n; j++) {
+			
+				if (charArr[i] == charArr[j]) {
+					count++;
+					visited[0] = charArr[i];
+				}
+		}
+		printf("\n\n");
+		printf("%c : %d\n", charArr[i], count);
 	}
 }
 
@@ -490,6 +501,11 @@ void acceptMarks(int mark[],int n) {
 	for (int i = 0; i < n; i++) {
 		printf("\nEnter Marks of Sub - %d (Max - 80) = ",i+1);
 		scanf_s("%d", &mark[i]);
+		while (mark[i] >= 80 || mark[i] <= 0) {
+			printf("\nInvalid Marks!! \n");
+			printf("\nRe - Enter Marks of Sub - %d (Max - 80) = ", i + 1);
+			scanf_s("%d", &mark[i]);
+		}
 	}
 }
 
