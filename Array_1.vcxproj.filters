@@ -72,6 +72,15 @@
     <ClCompile Include="Q17.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Array_Pointer_Q1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Arr_Pointer_fun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Array_Pointer_Q2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="function.h">

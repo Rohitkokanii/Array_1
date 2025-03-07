@@ -118,3 +118,30 @@ void CountDistinctArrayElement(char charArr[], int n);
 void acceptMarks(int [],int);
 
 void CalculatePercentage(int mark[], int n);
+
+//=========================== * Array - Pointer * ================================
+
+//Q1
+
+void acceptInt(int arr[], int);
+
+void displayInt(int arr[], int);
+
+//char 
+
+void acceptChar(char arr[], int);
+
+void displayChar(char arr[], int);
+
+//float
+
+void acceptFloat(float[], int);
+
+void displayFloat(float[], int);
+
+//double 
+
+void acceptDouble(double[], int);
+
+void displayDouble(double[], int);
+
